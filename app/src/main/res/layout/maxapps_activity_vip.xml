@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:background="@drawable/vip_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+        </ImageView>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageViewBack"
+                    app:tint="@color/white"
+                    android:src="@drawable/ic_back_arrow"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="2"
+                    android:text="Account Center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:src="@drawable/profile_icon"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:background="@drawable/level_bg"
+                    android:id="@+id/displayLevel"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Normal"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/normal_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"/>
+            </LinearLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.card.MaterialCardView
+                        app:cardCornerRadius="20dp"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp">
+
+                        <LinearLayout
+
+                            android:orientation="horizontal"
+                            android:weightSum="3"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_weight="1"
+                                android:src="@drawable/no_ads_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"/>
+                            <ImageView
+                                android:layout_weight="1"
+                                android:src="@drawable/paid_themes_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"/>
+                            <ImageView
+                                android:layout_weight="1"
+                                android:src="@drawable/unlock_feature_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"/>
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp">
+                        <LinearLayout
+                            android:layout_gravity="center_vertical"
+                            android:weightSum="3"
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/quarterlyPackage"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                app:cardCornerRadius="10dp"
+                                android:layout_margin="2dp"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="120dp"
+                                android:focusable="true">
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:textStyle="bold"
+                                        android:textColor="#FF9800"
+                                        android:textSize="18sp"
+                                        android:layout_gravity="center"
+                                        android:text="Rs 300"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+                                    <TextView
+                                        android:layout_marginTop="5dp"
+                                        android:textColor="@color/gnt_black"
+                                        android:layout_gravity="center"
+                                        android:text="Weekly"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/monthlyPackage"
+
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                app:cardCornerRadius="10dp"
+                                android:layout_margin="2dp"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="120dp"
+                                android:focusable="true">
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:textStyle="bold"
+                                        android:textColor="#FF9800"
+                                        android:textSize="18sp"
+                                        android:layout_gravity="center"
+                                        android:text="Rs 1000"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+                                    <TextView
+                                        android:layout_marginTop="5dp"
+                                        android:textColor="@color/gnt_black"
+                                        android:layout_gravity="center"
+                                        android:text="Monthly"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/yearlyPackage"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:clickable="true"
+                                app:cardCornerRadius="10dp"
+                                android:layout_margin="2dp"
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="120dp"
+                                android:focusable="true">
+                                <LinearLayout
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:textStyle="bold"
+                                        android:textColor="#FF9800"
+                                        android:textSize="18sp"
+                                        android:layout_gravity="center"
+                                        android:text="Rs 3000"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+                                    <TextView
+                                        android:layout_marginTop="5dp"
+                                        android:textColor="@color/gnt_black"
+                                        android:layout_gravity="center"
+                                        android:text="Yearly"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"/>
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:id="@+id/displaySelectedPackage"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Select Your Desire Package"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:id="@+id/imageViewSubscribe"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/watch_subscribe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"/>
+
+
+                    <TextView
+                        android:padding="10sp"
+                        android:text="@string/subscription_des_android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

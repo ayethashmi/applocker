@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/drawerLayout"
+        android:background="#F6F7FC">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/mainbg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:orientation="vertical"
+             >
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@drawable/topbar"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:title="App Lock"
+                    app:titleCentered="true"
+                    app:titleTextColor="@color/colorWhite" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                   >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/top_banner_bg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/logo" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:padding="5dp"
+                    android:text="More Feastures"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#C8CDD1" />
+
+                <LinearLayout
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_margin="@dimen/_7sdp"
+                        android:id="@+id/appLock"
+                        android:layout_width="@dimen/_75sdp"
+                        android:layout_height="@dimen/_75sdp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/lockaps"
+                        android:visibility="visible" />
+
+
+                    <ImageView
+                        android:layout_margin="@dimen/_7sdp"
+                        android:id="@+id/my_theme_icon"
+                        android:layout_width="@dimen/_75sdp"
+                        android:layout_height="@dimen/_75sdp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/themes" />
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_margin="@dimen/_7sdp"
+                        android:id="@+id/vault"
+                        android:layout_width="@dimen/_75sdp"
+                        android:layout_height="@dimen/_75sdp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/main_vault" />
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_margin="@dimen/_7sdp"
+                        android:id="@+id/photoVault"
+                        android:layout_width="@dimen/_85sdp"
+                        android:layout_height="@dimen/_85sdp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/photovault" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_margin="@dimen/_7sdp"
+                        android:id="@+id/videoVault"
+                        android:layout_width="@dimen/_85sdp"
+                        android:layout_height="@dimen/_85sdp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/videovault" />
+
+
+                    <ImageView
+                        android:layout_margin="@dimen/_7sdp"
+                        android:id="@+id/settingVault"
+                        android:layout_width="@dimen/_75sdp"
+                        android:layout_height="@dimen/_75sdp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/setting" />
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_margin="@dimen/_7sdp"
+                        android:id="@+id/fingerprints"
+                        android:layout_width="@dimen/_75sdp"
+                        android:layout_height="@dimen/_75sdp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/fingrprnt" />
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_margin="@dimen/_7sdp"
+                        android:id="@+id/intruder"
+                        android:layout_width="@dimen/_75sdp"
+                        android:layout_height="@dimen/_75sdp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/intruder" />
+
+                    <ImageView
+
+                        android:layout_margin="@dimen/_7sdp"
+                        android:id="@+id/statussever"
+                        android:layout_width="@dimen/_85sdp"
+                        android:layout_height="@dimen/_85sdp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/statussever"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:background="#C8CDD1" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:menu="@menu/game_ashes_nav_menu"
+
+            app:headerLayout="@layout/maxapps_header_layout" >
+
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+</layout>

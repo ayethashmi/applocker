@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bggg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="@dimen/_250sdp">
+
+   <RelativeLayout
+       android:layout_margin="@dimen/_5sdp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+       <ImageView
+           android:id="@+id/bell"
+           android:layout_width="@dimen/_70sdp"
+           android:layout_height="@dimen/_70sdp"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="@dimen/_10sdp"
+           android:src="@drawable/notifyiccnc" />
+
+       <TextView
+           android:id="@+id/hi"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/bell"
+           android:layout_marginTop="@dimen/_5sdp"
+           android:gravity="center"
+           android:text="UsageState Permission"
+           android:textColor="@color/black"
+           android:textSize="@dimen/_20sdp"
+           android:textStyle="bold"
+
+           />
+
+       <TextView
+           android:fontFamily="@font/roboto"
+           android:layout_marginEnd="@dimen/_15sdp"
+           android:layout_marginStart="@dimen/_15sdp"
+           android:id="@+id/h2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/hi"
+           android:layout_marginTop="@dimen/_10sdp"
+           android:gravity="start"
+           android:lineSpacingExtra="@dimen/_2sdp"
+           android:text="Required UsageState permission to monitor apps. Click on allow button to work app properly."
+           android:textColor="#3D3D3E"
+           android:textSize="@dimen/_13sdp"
+
+           />
+
+       <ImageView
+           android:id="@+id/allow"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/h2"
+           android:layout_marginStart="@dimen/_30sdp"
+           android:layout_marginTop="@dimen/_10sdp"
+           android:layout_marginEnd="@dimen/_30sdp"
+           android:layout_marginBottom="@dimen/_10sdp"
+           android:adjustViewBounds="true"
+           android:src="@drawable/allowbtn" />
+
+
+   </RelativeLayout>
+
+</LinearLayout>

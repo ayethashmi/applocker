@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="220dp">
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/item_view_theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="centerInside" />
+            </androidx.cardview.widget.CardView>
+
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/item_view_tick"
+                android:layout_margin="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/fofapps2_ic_tick"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_gravity="end"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/wheel_two" />
+
+</LinearLayout>

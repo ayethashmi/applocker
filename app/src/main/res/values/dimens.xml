@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="key_number_size">18sp</dimen>
+    <dimen name="key_pad_margin">10dp</dimen>
+    <dimen name="key_pad_margin_start">20dp</dimen>
+    <dimen name="key_pad_margin_end">20dp</dimen>
+    <dimen name="key_pad_margin_top">10dp</dimen>
+    <dimen name="key_pad_margin_bottom">10dp</dimen>
+
+    <dimen name="key_number_width">60dp</dimen>
+    <dimen name="key_number_height">60dp</dimen>
+
+
+</resources>

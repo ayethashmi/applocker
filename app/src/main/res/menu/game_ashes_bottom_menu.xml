@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:icon="@drawable/setting" android:title="Setting" android:id="@+id/bottom_setting"/>
+
+    <item android:visible="false" android:icon="@drawable/share" android:title="Share" android:id="@+id/bottom_share"/>
+
+    <item
+
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"
+        android:id="@+id/bottom_home"/>
+    <item android:icon="@drawable/themeicon" android:title="Themes" android:id="@+id/bottom_themes"/>
+
+
+</menu>

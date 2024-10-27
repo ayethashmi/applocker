@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_header"
+    android:layout_width="match_parent"
+    android:layout_height="229dp"
+    android:background="@drawable/drawnav"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+
+            android:id="@+id/nav_header_imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_back_arrow"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/nav_header_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="80dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="App Locker"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/backPress"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="36dp"
+        android:layout_height="36dp">
+        <ImageView
+            android:visibility="invisible"
+            android:src="@drawable/ic_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

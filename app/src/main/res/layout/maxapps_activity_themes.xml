@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+
+
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/fofapps2_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+
+            <TextView
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="22sp"
+                   android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:text="Themes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_weight="3"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+
+    </LinearLayout>
+</layout>

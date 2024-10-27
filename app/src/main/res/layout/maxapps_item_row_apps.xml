@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_margin="2dp"
+        android:weightSum="3"
+        android:padding="5dp"
+        android:id="@+id/main"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:src="@mipmap/rec_icon"
+            android:layout_gravity="center"
+            android:id="@+id/item_row_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/roboto_medium"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:id="@+id/item_row_displayName"
+                android:textSize="10sp"
+                android:textColor="#201D1D"
+                android:text="Fiverr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:visibility="gone"
+                android:textColor="#8E9091"
+                android:fontFamily="@font/roboto_medium"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:id="@+id/item_row_displayPackage"
+                android:textSize="12sp"
+                android:text="com.fiverr.com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:src="@drawable/unlock"
+            android:id="@+id/item_row_displayUnLock"
+            android:textSize="18sp"
+            android:text="Block"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/fofapps2_fofapps_unlock"
+
+            android:visibility="gone"
+            android:id="@+id/item_row_displayLocked"
+            android:textSize="18sp"
+            android:text="UnBlock"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_below="@+id/main"
+        android:visibility="visible"
+        android:background="#EDEBEB"
+        android:layout_width="wrap_content"
+        android:layout_height="0.9dp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/msplashbg"
+        android:orientation="vertical"
+        tools:context=".game_ashes_2_ui.FingerSplashActivity">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="Welcome to Applock"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+         />
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:id="@+id/imagesplash"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/logowlcome" />
+
+    </LinearLayout>
+</layout>

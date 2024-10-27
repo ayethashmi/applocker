@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:title="Select Media"
+                android:theme="@style/ToolbarTheme"
+                app:titleTextColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_weight="1"
+                android:id="@+id/recyclerView"
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <Button
+                android:id="@+id/buttonLockNow"
+                android:text="Lock Now"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ProgressBar
+             android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/defaultLayout"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/default_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"/>
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:text="Empty Files"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_zero_status_bar_color">
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:visibility="visible"
+            android:id="@+id/highlighone"
+            android:adjustViewBounds="true"
+            android:src="@drawable/onehighlight"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+        <ImageView
+            android:layout_marginTop="50dp"
+
+            android:visibility="gone"
+            android:id="@+id/highlighBoth"
+            android:adjustViewBounds="true"
+            android:src="@drawable/onetwo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+        <ImageView
+            android:id="@+id/lockBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/fingerPrintDefaultIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/fofapps2_finger_white" />
+
+        <ImageView
+            android:id="@+id/fingerPrintErrorIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:src="@drawable/fofapps2_red_fingerprint"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/fingerprintGreenIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:src="@drawable/fofapps2_green_fingerprint"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+
+                android:id="@+id/appIcon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo"
+                android:visibility="visible" />
+
+
+            <TextView
+                android:id="@+id/displayDelayCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="Wait 15 Second"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/displayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appIcon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Draw an unlock pattern"
+                android:textColor="#E8E7E7"
+                android:visibility="visible" />
+
+            <com.reginald.patternlockview.PatternLockView
+                android:id="@+id/lock_view_dot"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="20dp"
+                app:lock_autoLink="true"
+                app:lock_lineColor="#FFFFFF"
+                app:lock_lineWidth="5dp"
+                app:lock_nodeHighlightSrc="@drawable/pattern05"
+                app:lock_nodeOnAnim="@null"
+                app:lock_nodeSize="30dp"
+                app:lock_nodeSrc="@drawable/pattern05"
+                app:lock_nodeTouchExpand="15dp"
+                app:lock_padding="5dp"
+                app:lock_size="3"
+                app:lock_spacing="120dp"
+                app:lock_vibrateTime="100" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

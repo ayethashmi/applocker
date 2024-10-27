@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/fofapps2_dialog_logo_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+        <ImageView
+            android:layout_marginTop="40dp"
+            android:src="@drawable/fofapps2_dialog_remove_ads"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginTop="40dp"
+            android:src="@drawable/fofapps2_dialog_app_lock_button"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/fofapps2_dialog_statments"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/buttonUnlock"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/fofapps2_dialog_subscribe_button" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/buttonCancel"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/fofapps2_ic_cancel"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

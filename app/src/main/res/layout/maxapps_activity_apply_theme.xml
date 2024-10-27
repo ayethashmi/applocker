@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:background="@drawable/themebg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        tools:context=".ui.themes.MaxApps_ApplyThemeActivity">
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:id="@+id/displayImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:src="@drawable/applytheme"
+            android:id="@+id/buttonApplyTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Apply Theme" />
+
+        <FrameLayout
+            android:id="@+id/bannerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+       <!-- <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/admob_banner">
+
+        </com.google.android.gms.ads.AdView>-->
+
+    </LinearLayout>
+</layout>

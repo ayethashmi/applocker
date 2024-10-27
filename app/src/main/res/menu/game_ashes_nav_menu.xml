@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:title="Home"
+            android:visible="false"
+            android:icon="@drawable/fofapps2_ic_home"
+            />
+        <item android:id="@+id/security"
+            android:title="Security"
+            android:visible="false"
+            android:icon="@drawable/lock"/>
+        <item
+            android:visible="false"
+            android:id="@+id/nav_setting"
+            android:title="Setting"
+            android:icon="@drawable/fofapps2_setting"
+            />
+
+        <item android:id="@+id/nav_support"
+            android:title="Rate Us"
+            android:icon="@drawable/fofapps2_fofapps_support_us"
+            />
+
+
+        <item
+
+            android:id="@+id/nav_share"
+            android:title="Share"
+            android:icon="@drawable/fofapps2_ic_share"
+            />
+        <item android:id="@+id/nav_selfies"
+            android:title="Selfies"
+            android:visible="false"
+            android:icon="@drawable/holdingcell"
+            />
+        <item android:id="@+id/nav_theme"
+            android:title="Themes"
+            android:visible="false"
+            android:icon="@drawable/fofapps2_ic_theme"/>
+
+        <item  android:icon="@drawable/fofapps2_fofapps_unlock_icon"
+            android:title="Secure Apps"
+            android:visible="false"
+            android:id="@+id/mSecure" />
+        <item  android:icon="@drawable/unlock"
+            android:title="Unsecure Apps"
+            android:visible="false"
+            android:id="@+id/mUnsecure" />
+
+    </group>
+
+</menu>

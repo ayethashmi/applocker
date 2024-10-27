@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#7760DA</color>
+    <color name="purple_500">#7760DA</color>
+    <color name="purple_700">#7760DA</color>
+    <color name="teal_200">#7760DA</color>
+    <color name="teal_700">#7760DA</color>
+    <color name="black">#FF000000</color>
+    <color name="gnt_black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#7760DA</color>
+    <drawable name="class_zero_background">#7f040000</drawable>
+    <color name="colorPrimaryDark">#7760DA</color>
+
+    <color name="colorAccent">#7760DA</color>
+
+    <color name="colorWhite">#fff</color>
+
+    <color name="colorBlack">#000</color>
+
+    <color name="screenBackgroundColor">#FCFDFD</color>
+
+    <color name="theme_zero_status_bar_color">#7760DA</color>
+
+
+    <color name="screen_bg_grey">#F0F2F6</color>
+</resources>

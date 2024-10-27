@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MaxApps_SecuritySettingActivity">
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/fofapps2_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+
+            <TextView
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:text="Security Setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+
+       <!-- <com.google.android.gms.ads.AdView
+            android:id="@+id/banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            app:adSize="BANNER"
+            app:adUnitId="@string/admob_banner"/>
+       -->
+
+      <!--  <LinearLayout
+            android:id="@+id/facebook_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            />-->
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/bannerContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/colorBlack"
+                    android:padding="20dp"
+                    android:text="Security Question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/inputSecurityQuestion"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:padding="10dp"
+                    android:hint="Security Question"
+                    android:background="#E8EBED"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+                <EditText
+                    android:id="@+id/inputSecurityAnswer"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:padding="10dp"
+                    android:hint="Answer to security questions"
+                    android:background="#E8EBED"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/save"
+                    android:id="@+id/buttonQuestionSave"
+                    android:layout_margin="20dp"
+                    android:text="Save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Security question can be used to reset password when you forget your password."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/colorBlack"
+                    android:padding="20dp"
+                    android:text="Security Email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/inputSecurityEmail"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:padding="10dp"
+                    android:hint="Enter security email"
+                    android:background="#E8EBED"
+                    android:textSize="12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/save"
+                    android:id="@+id/buttonEmailSave"
+                    android:layout_margin="20dp"
+                    android:text="Save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Security email can be used to reset password when forget your password."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+
+    
+</RelativeLayout>
+</layout>

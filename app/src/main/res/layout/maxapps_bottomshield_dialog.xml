@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/mpenel" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_marginTop="@dimen/_20sdp"
+                android:id="@+id/loadAnimLayout"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:layout_centerInParent="true"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/done" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="Give AppLock permission to protect your Privacy"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18sdp"
+                        android:text="Usage data access"
+                        android:gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <ImageView
+                        android:id="@+id/unselcet1"
+                        android:visibility="visible"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:adjustViewBounds="true"
+                        android:layout_marginStart="@dimen/_100sdp"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/unselect"/>
+                    <ImageView
+                        android:id="@+id/select1"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:adjustViewBounds="true"
+                        android:layout_marginStart="@dimen/_100sdp"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/select"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18sdp"
+                        android:text="OverlayPermission access"
+                        android:gravity="start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <ImageView
+                        android:id="@+id/unselect2"
+                        android:visibility="visible"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:adjustViewBounds="true"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/unselect"/>
+                    <ImageView
+                        android:id="@+id/select2"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:adjustViewBounds="true"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/select"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>
